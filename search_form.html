@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <title>Search bar</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<script type="text/javascript">
+function active(){
+    var searchBar = document.getElementbyid('searchBar');
+
+    if(searchBar.value == 'search...'){
+searchBar.value = ''
+searchBar.placeholder = 'search...'
+    }
+}
+
+
+function inactive(){
+    var searchBar = document.getElementbyid('searchBar');
+
+    if(searchBar.value == ''){
+searchBar.value = 'search...'
+searchBar.placeholder = ''
+    }
+}
+
+</script>
+
+</head>
+    
+<body>
+<form action="search.php" method="post"> 
+    <input type="text" id="searchBar" placeholder="" value="search..." maxlength="25" autocomplete="off" onmousedown="active();" onblur="inactive()" />
+    <input type="submit" id="searchBtn"  value="search" />
+</form>
+    
+</body>
+</html>
