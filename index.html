@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <title>Document</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a href="#eng" class= "btn" data-reload>English</a>
+    <a href="#fi" class= "btn" data-reload>Finnish</a>
+
+    <script>
+        //define language reload anchors
+        var dataReload = document.querySelectorAll("[data-reload]");
+        //language translations
+       var language = {
+           eng:{
+              ln:"Login Wrong username password combination Username Password Login not yet a member"
+           },
+           fi:{
+ln:"Kirjaudu sisään Väärä käyttäjänimen salasanayhdistelmä Käyttäjätunnus Salasana Kirjaudu sisään et ole vielä jäsen"
+           }
+       };
+       if(window.location.hash){
+           if(window.location.hash === "#fi"){
+hi.textcontent = language.fi.ln;
+           }
+       }
+     // define language reload onclick illiteration
+     for(i=0; i<= datreload.length; i++)  {
+         dataReload[i].onclick = function() {
+             location.reload(true);
+         };
+     }
+    </script>
+</body>
+</html>
