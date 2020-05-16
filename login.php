@@ -6,6 +6,8 @@
 <head>
   <title>Registration system PHP and MySQL</title>
   <link rel="stylesheet" type="text/css" href="discount.css">
+    <script type="text/javascript" src="discount.js"></script>
+
 	<script>
 		function validateForm() {
 		var x = document.forms["myForm"]["name"].value;

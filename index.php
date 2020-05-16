@@ -16,9 +16,11 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="discount.js"></script>
 </head>
 <body>
 
+<div id="container"></div>
 <div class="header">
 	<h2>Home Page</h2>
 </div>
